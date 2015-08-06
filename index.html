@@ -53,7 +53,7 @@
  <input type="button" onclick="getPlayerData()" value="Count rabbits!"/>  
   
   <script>
- console.log("new one started")
+ console.log("new one started");
     $.getJSON('data.json', function(data) {
           var output="<ul>";
           for (var i in data.users) {
@@ -64,6 +64,7 @@
           output+="</ul>";
           document.getElementById("placeholder").innerHTML=output;
     });
+	console.log('new one done. ');
 	</script>
 	
 	
