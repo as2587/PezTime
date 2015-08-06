@@ -52,8 +52,8 @@
   
  <input type="button" onclick="getPlayerData()" value="Count rabbits!"/>  
   
-  
   <script>
+ console.log("new one started")
     $.getJSON('data.json', function(data) {
           var output="<ul>";
           for (var i in data.users) {

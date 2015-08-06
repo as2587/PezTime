@@ -5,11 +5,11 @@ function count_rabbits() {
     }
 }
 
-function getPlayerData(){
-	var client = new XMLHttpRequest();
-	client.open('GET', 'https://github.com/as2587/PezTime/blob/master/abhishekPEZ.txt');
-	client.onreadystatechange = function() {
-	  alert(client.responseText);
-	}
-	client.send();
-}
+// function getPlayerData(){
+// 	var client = new XMLHttpRequest();
+// 	client.open('GET', 'https://github.com/as2587/PezTime/blob/master/abhishekPEZ.txt');
+// 	client.onreadystatechange = function() {
+// 	  alert(client.responseText);
+// 	}
+// 	client.send();
+// }
