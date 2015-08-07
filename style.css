@@ -25,28 +25,36 @@ p {
 	
     }
 
-#models{
+a{
 	text-align: center;
 	font-family: 'Arial Narrow', Arial, sans-serif;
-	font-size: 32px;
+	font-size: 25px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 400;
-	line-height: 22.2222232818604px;
+	text-decoration: none;
+	color: #666699;
+	
+	}
+a:hover{
+	font-weight: bold;
+	}
+	
+#models{
+
+	text-align: center;
 	
     padding-top: 25px;
-    padding-right: 50px;
+    padding-right: 5%;
     padding-bottom: 25px;
-    padding-left: 50px;
-	color: #666699;
+    padding-left: 5%;
 	
 }
 
 #model_cont{
     padding-top: 25px;
-    padding-right: 250px;
+    padding-right: 15%;
     padding-bottom: 25px;
-    padding-left: 250px;
+    padding-left: 15%;
 	background-color: #FFFF99
 	
 }

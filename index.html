@@ -26,17 +26,21 @@
 
 <script type="text/javascript">
 
-	var pezModels = ['Daphne','Fred','Hello Kitty','Legolas', 'Scooby', 'Shaggy'];
+	var pezModels = ['Chewbacca','C3PO','Daphne','Fred','Gimli','Gollum','Hello Kitty','Legolas','R2D2', 'Scooby', 'Shaggy', 'Thor', 'Velma', 'Yoda'];
 	var text = "";
 	for (i = 0; i < pezModels.length; i++) { 
-	    text += pezModels[i];
+	    text += '<a href=\"#' +  pezModels[i]+ '\">' +pezModels[i] +'</a>'
 		if (i<pezModels.length-1){
 			text += ", ";
 		}
 		
+
 		
 		var div = document.createElement("div");
 		div.setAttribute("id", "model_cont")
+		var aTag = document.createElement('a');
+		aTag.setAttribute('name',pezModels[i]);
+		div.appendChild(aTag);
 		
 		//get container and place it!
 		var currModelData = GetTimeline(pezModels[i]);
@@ -50,7 +54,7 @@
 
 	    // Create a Timeline
 	    var timeline = new vis.Timeline(div, currModelData, options);
-		
+	
 		
 		document.body.appendChild(div);
 		
