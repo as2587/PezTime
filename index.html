@@ -42,6 +42,10 @@
 		aTag.setAttribute('name',pezModels[i]);
 		div.appendChild(aTag);
 		
+		var pTag = document.createElement('p');
+		pTag.innerHTML = pezModels[i];
+		div.appendChild(pTag);
+		
 		//get container and place it!
 		var currModelData = GetTimeline(pezModels[i]);
 	    // DOM element where the Timeline will be attached
