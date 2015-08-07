@@ -43,6 +43,22 @@ function GetTimeline(currModel, todaystr) {
 			items = new vis.DataSet([{id: 1, content: 'Alon', start: '2015-08-01', end: todaystr}
 			]);
 			break;
+		case "Velma":
+			items = new vis.DataSet([{id: 1, content: 'Alon', start: '2015-08-01', end: todaystr}
+			]);
+			break;
+		case "Yoda":
+			items = new vis.DataSet([{id: 1, content: 'Alon', start: '2015-08-01', end: todaystr}
+			]);
+			break;
+		case "Scooby":
+			items = new vis.DataSet([{id: 1, content: 'Alon', start: '2015-08-01', end: todaystr}
+			]);
+			break;
+		case "Gollum":
+			items = new vis.DataSet([{id: 1, content: 'Alon', start: '2015-08-01', end: todaystr}
+			]);
+			break;
 		case "Shaggy":
 			items = new vis.DataSet([
 			{id: 1, content: 'David', start: '2015-08-04', end: todaystr}
