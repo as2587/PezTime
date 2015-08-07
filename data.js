@@ -8,7 +8,7 @@ function GetTimeline(currModel, todaystr) {
 	switch(currModel){
 		case "Chewbacca":
 			items = new vis.DataSet([
-	      	  {id: 1, content: 'Example', start: '2015-04-12', end: '2015-08-10'},
+	      	  {id: 1, content: 'Example', start: '2015-04-12', end: '2015-08-10'}
 
 	    	]);
 			break;
@@ -25,31 +25,31 @@ function GetTimeline(currModel, todaystr) {
 			break;
 		case "Fred":
 			items = new vis.DataSet([
-	      	  {id: 1, content: 'Example', start: '2015-04-14', end: '2015-08-10'},
+	      	  {id: 1, content: 'Example', start: '2015-04-14', end: '2015-08-10'}
 
 		    ]);
 			break;
 		case "Gimli":
 			items = new vis.DataSet([
-	      	  {id: 1, content: 'Example', start: '2015-04-14', end: '2015-08-10'},
+	      	  {id: 1, content: 'Example', start: '2015-04-14', end: '2015-08-10'}
 
 		    ]);
 			break;
 		case "R2D2":
-			items = new vis.DataSet([{id: 1, content: 'Will', start: '2015-08-07', end: todaystr},
+			items = new vis.DataSet([{id: 1, content: 'Will', start: '2015-08-07', end: todaystr}
 			]);
 			break;
 		case "Shaggy":
 			items = new vis.DataSet([
-			{id: 1, content: 'David', start: '2015-08-04', end: todaystr},
+			{id: 1, content: 'David', start: '2015-08-04', end: todaystr}
 			]);
 			break;
 		case "C3PO":
-			items = new vis.DataSet([{id: 1, content: 'Will', start: '2015-08-07', end: todaystr},
+			items = new vis.DataSet([{id: 1, content: 'Will', start: '2015-08-07', end: todaystr}
 			]);
 			break;
 		case "Darth Vader":
-			items = new vis.DataSet([{id: 1, content: 'Will', start: '2015-08-07', end: todaystr},
+			items = new vis.DataSet([{id: 1, content: 'Will', start: '2015-08-07', end: todaystr}
 			]);
 		break;
 	}
