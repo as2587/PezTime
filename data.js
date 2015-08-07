@@ -1,5 +1,5 @@
 function GetModels(){
- var items = ['Chewbacca','C3PO','Daphne','Fred','Gimli','Gollum','Hello Kitty','Legolas','R2D2', 'Scooby', 'Shaggy', 'Thor', 'Velma', 'Yoda'];	
+ var items = ['Chewbacca','C3PO','Daphne','Fred','Gimli','Gollum','Hello Kitty','Legolas','R2D2', 'Scooby', 'Shaggy', 'Thor', 'Velma', 'Yoda','Darth Vader'];	
  return items;
 }
 
@@ -10,12 +10,6 @@ function GetTimeline(currModel, todaystr) {
 			items = new vis.DataSet([
 	      	  {id: 1, content: 'Example', start: '2015-04-12', end: '2015-08-10'},
 
-	    	]);
-			break;
-		case "C3PO":
-			items = new vis.DataSet([
-	      	  {id: 1, content: 'Example', start: '2015-04-24', end: '2015-08-10'},
-			  {id: 2, content: 'Example2', start: '2015-04-22', end: '2015-04-24'},
 	    	]);
 			break;
 		case "Daphne":
@@ -41,7 +35,18 @@ function GetTimeline(currModel, todaystr) {
 
 		    ]);
 			break;
-		
+		case "R2D2":
+			items = new vis.DataSet([{id: 1, content: 'Will', start: '2015-08-07', end: todaystr},
+			]);
+			break;
+		case "C3PO":
+			items = new vis.DataSet([{id: 1, content: 'Will', start: '2015-08-07', end: todaystr},
+			]);
+			break;
+		case "Darth Vader":
+			items = new vis.DataSet([{id: 1, content: 'Will', start: '2015-08-07', end: todaystr},
+			]);
+		break;
 	}
 	return items;
 }
