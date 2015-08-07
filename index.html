@@ -26,6 +26,15 @@
 
 <script type="text/javascript">
 
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1; //January is 0!
+	mm = (mm < 10 ? '0' : '') + mm;
+	dd = (dd < 10 ? '0' : '') + dd;
+	var yyyy = today.getFullYear();
+	var todaystr = yyyy + '-' + mm + '-' + dd
+	
+	
 	var pezModels = GetModels();
 	var text = "";
 	for (i = 0; i < pezModels.length; i++) { 
@@ -47,13 +56,14 @@
 		div.appendChild(pTag);
 		
 		//get container and place it!
-		var currModelData = GetTimeline(pezModels[i]);
+		var currModelData = GetTimeline(pezModels[i], todaystr);
 	    // DOM element where the Timeline will be attached
 	    var container = document.getElementById('model_cont');
  
 	    // Configuration for the Timeline
 		var options = {
 			//autoResize: false
+			zoomMin:100000
 		};
 
 	    // Create a Timeline
