@@ -2,71 +2,62 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Timeline | Basic demo</title>
+  	<title>PezTime | Neocis Inc</title>
 
-  <style type="text/css">
-    body, html {
-      font-family: sans-serif;
-    }
-  </style>
-
-  <script src="vis/dist/vis.js"></script>
-  <link href="vis/dist/vis.css" rel="stylesheet" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ 	<script src="vis/dist/vis.js"></script>
+  	<link href="vis/dist/vis.css" rel="stylesheet" type="text/css" />
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   
-  <script src="script.js"></script>
+ 	 <script src="script.js"></script>
   
 </head>
+
+
 <body>
 
-<p>
-  pezTime. Where did you're pez go?
-</p>
 
-<div id="visualization"></div>
-<div id="placeholder"></div>
+<h1>pezTime</h1> <h2>Where did your Pez go?</h2>
+
+<p id="models"></p>
+
+<div id="AllTimelines"></div>
 
 <script type="text/javascript">
 
-  // DOM element where the Timeline will be attached
-  var container = document.getElementById('visualization');
+	var pezModels = ['Daphne','Fred','Hello Kitty','Legolas', 'Scooby', 'Shaggy'];
+	var text = "";
+	for (i = 0; i < pezModels.length; i++) { 
+	    text += pezModels[i];
+		if (i<pezModels.length-1){
+			text += ", ";
+		}
+		
+		
+		var div = document.createElement("div");
+		div.setAttribute("id", "model_cont")
+		
+		//get container and place it!
+		var currModelData = GetTimeline(pezModels[i]);
+	    // DOM element where the Timeline will be attached
+	    var container = document.getElementById('model_cont');
+ 
+	    // Configuration for the Timeline
+		var options = {
+			//autoResize: false
+		};
 
-  // Create a DataSet (allows two way data-binding)
-  var items = new vis.DataSet([
-    {id: 1, content: 'item 1', start: '2014-04-20'},
-    {id: 2, content: 'item 2', start: '2014-04-14'},
-    {id: 3, content: 'item 3', start: '2014-04-18'},
-    {id: 4, content: 'item 4', start: '2014-04-16', end: '2014-04-19'},
-    {id: 5, content: 'item 5', start: '2014-04-25'},
-    {id: 6, content: 'item 6', start: '2014-04-27', type: 'point'}
-  ]);
-
-  // Configuration for the Timeline
-  var options = {};
-
-  // Create a Timeline
-  var timeline = new vis.Timeline(container, items, options);
-  console.log("timeline done 1");
+	    // Create a Timeline
+	    var timeline = new vis.Timeline(div, currModelData, options);
+		
+		
+		document.body.appendChild(div);
+		
+	}
+    document.getElementById("models").innerHTML = text;
   
-</script>
-  
- <input type="button" onclick="getPlayerData()" value="Count rabbits!"/>  
-  
-  <script>
- console.log("new one started");
-    $.getJSON('data.json', function(data) {
-          var output="<ul>";
-          for (var i in data.users) {
-			  console.log("name 1");
-              output+="<li>" + data.users[i].firstName + " " + data.users[i].lastName + "--" + data.users[i].joined.month+"</li>";
-          }
-
-          output+="</ul>";
-          document.getElementById("placeholder").innerHTML=output;
-    });
-	console.log('new one done. ');
-	</script>
-	
+</script>	
 	
 </body>
 </html>

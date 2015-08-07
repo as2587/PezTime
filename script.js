@@ -1,15 +1,23 @@
-function count_rabbits() {
-    for(var i=1; i<=3; i++) {
-        // operator + concatenates strings
-        alert("Rabbit "+i+" out of the hat!")
-    }
+function GetTimeline(currModel) {
+	var items;
+	
+	switch(currModel){
+		case "Daphne":
+			items = new vis.DataSet([
+		      {id: 1, content: 'Abhishek', start: '2015-07-15', end: '2015-08-15'},
+		      {id: 2, content: 'item 2', start: '2014-04-14'},
+
+		    ]);
+			break;
+		case "HelloKitty":
+			items = new vis.DataSet([
+		      {id: 1, content: 'Abhishek', start: '2015-07-15', end: '2015-08-15'},
+		      {id: 2, content: 'item 2', start: '2014-04-14'},
+
+		    ]);
+			break;
+		
+	}
+	return items;
 }
 
-// function getPlayerData(){
-// 	var client = new XMLHttpRequest();
-// 	client.open('GET', 'https://github.com/as2587/PezTime/blob/master/abhishekPEZ.txt');
-// 	client.onreadystatechange = function() {
-// 	  alert(client.responseText);
-// 	}
-// 	client.send();
-// }
