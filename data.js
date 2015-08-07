@@ -1,6 +1,10 @@
+function GetModels(){
+ var items = ['Chewbacca','C3PO','Daphne','Fred','Gimli','Gollum','Hello Kitty','Legolas','R2D2', 'Scooby', 'Shaggy', 'Thor', 'Velma', 'Yoda'];	
+ return items;
+}
+
 function GetTimeline(currModel) {
 	var items;
-	//['Chewbacca','C3PO','Daphne','Fred','Gimli','Gollum','Hello Kitty','Legolas','R2D2', 'Scooby', 'Shaggy', 'Thor', 'Velma', 'Yoda']
 	switch(currModel){
 		case "Chewbacca":
 			items = new vis.DataSet([
