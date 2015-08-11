@@ -31,7 +31,7 @@ function GetTimeline(currModel, todaystr) {
 			break;
 		case "Gimli":
 			items = new vis.DataSet([
-	      	  {id: 1, content: 'Ryan', start: '2015-04-14', end: '2015-08-10'}
+	      	  {id: 1, content: 'Ryan', start: '2015-04-14', end: todaystr}
 
 		    ]);
 			break;
