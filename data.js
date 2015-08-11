@@ -1,5 +1,5 @@
 function GetModels(){
- var items = ['Chewbacca','C3PO','Daphne','Fred','Gimli','Gollum','Hello Kitty','Legolas','R2D2', 'Scooby', 'Shaggy', 'Thor', 'Velma', 'Yoda','Darth Vader'];	
+ var items = ['Chewbacca','C3PO','Daphne','Fred','Gimli','Aragorn','Gandalf','Frodo','Bilbo','Samwise','Gollum','Hello Kitty','Legolas','R2D2', 'Scooby', 'Shaggy', 'Thor', 'Velma', 'Yoda','Darth Vader'];	
  return items;
 }
 
