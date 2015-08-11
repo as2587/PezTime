@@ -35,6 +35,56 @@ function GetTimeline(currModel, todaystr) {
 
 		    ]);
 			break;
+			
+		case "Gandalf":
+			items = new vis.DataSet([
+	      	  {id: 1, content: 'Ryan', start: '2015-04-14', end: todaystr}
+
+		    ]);
+			break;
+			
+		case "Legolas":
+			items = new vis.DataSet([
+	      	  {id: 1, content: 'Ryan', start: '2015-04-14', end: todaystr}
+
+		    ]);
+			break;
+			
+		case "Frodo":
+			items = new vis.DataSet([
+	      	  {id: 1, content: 'Ryan', start: '2015-04-14', end: todaystr}
+
+		    ]);
+			break;
+			
+		case "Bilbo":
+			items = new vis.DataSet([
+	      	  {id: 1, content: 'Ryan', start: '2015-04-14', end: todaystr}
+
+		    ]);
+			break;
+			
+		case "Samwise":
+			items = new vis.DataSet([
+	      	  {id: 1, content: 'Ryan', start: '2015-04-14', end: todaystr}
+
+		    ]);
+			break;
+			
+		case "Aragorn":
+			items = new vis.DataSet([
+	      	  {id: 1, content: 'Ryan', start: '2015-04-14', end: todaystr}
+
+		    ]);
+			break;
+			
+		case "Thor":
+			items = new vis.DataSet([
+	      	  {id: 1, content: 'Ryan', start: '2015-04-14', end: todaystr}
+
+		    ]);
+			break;
+			
 		case "R2D2":
 			items = new vis.DataSet([{id: 1, content: 'Will', start: '2015-08-07', end: todaystr}
 			]);
